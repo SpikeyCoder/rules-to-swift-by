@@ -48,7 +48,7 @@ final class SlotMachine {
         let reels = (Symbol.random(), Symbol.random(), Symbol.random())
         let payout = bet * schedule(reels)
 
-        return (bet * payout, reels)
+        return (payout, reels)
     }
 }
 
