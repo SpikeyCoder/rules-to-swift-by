@@ -52,7 +52,7 @@ enum SicBoBet {
         case .SpecificTriple(let n) where n == 一 && 一 == 二 && 二 == 三: return 180
         case .SpecificDouble(let n):
             switch roll {
-            case (n, n, _), (n, _, n), (_, n, n): return 11
+            case (n, n, _), (n, _, n), (_, n, n): return 11 
             default:
                 return 0
             }

@@ -281,7 +281,7 @@ enum PokerHand {
             return nil
         }
     }
-
+    
     init?(_ cards: [Card]) {
         var hands: [PokerHand] = []
         for hand in possibleHands(cards) {
